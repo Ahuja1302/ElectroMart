@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
+    <script src="./Js/index.js">
+
+    </script>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo1.png" width="180px"></a>
+            </div>
+            <nav class="container indigo topBotomBordersOut">
+
+                <a href="./index.html">Home</a>
+                <a href="./product.html">Product</a>
+                <a href="./about.html">About Us</a>
+                <a href="./Privacy.html">Privacy Policy</a>
+                <a href="./Login.html">Login/Signup</a>
+                <a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="countItem">0</span></a>
+
+
+            </nav>
+
+        </div>
+
+
+    </div>
+    <hr>
+    <div class="flex">
+        <div class="bgset1">
+            <div class="drag-disabel">
+                <img src="./images/bgImage.gif" alt="">
+            </div>
+        </div>
+
+
+        <div class="hero">
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"> </div>
+                    <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+
+                </div>
+                <form id="login" class="input-grp">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn" onclick="Popup()"><b>Log In</b></button>
+                </form>
+                <form id="register" class="input-grp">
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="Email Id" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>I agree to the Terms & Conditions</span>
+                    <button type="submit" class="submit-btn"><b>Register</b></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+
+        }
+
+
+    </script>
+    <script type="text/javascript">
+        function popup() {
+            swal("Thanks for asking  ", "We will revert you soon  ", "success");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

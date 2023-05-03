@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="loader_bg">
+        <div class="loader">
+        </div>
+    </div>
+    <script src="./Js/index.js">
+
+    </script>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo1.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./product.html">Product</a></li>
+                    <li><a href="./about.html">About Us</a></li>
+                    <li><a href="./Privacy.html">Privacy Policy</a></li>
+                    <li><a href="./Login.html">Login/Signup</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar-icon"> <a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="countItem">0</span></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Main Container-->
+    <div id="container">
+
+        <!-- Contact Form -->
+        <div id="contactform">
+            <form action="Project 2.0.html" onsubmit="myFunction()">
+                <h1>Ask Query</h1>
+                <!-- <h5><span class="aster">*</span>Required Fields</h5> -->
+                <h3><span class="aster">*</span>Subject</h3>
+                <input type="text" class="subject input" required>
+                <h3><span class="aster">*</span>Description</h3>
+                <textarea class="description input" required></textarea><br>
+                <input type="file" class="file input">
+                <hr>
+
+                <!-- Contact Information -->
+                <h2>Contact Information</h2>
+                <h3><span class="aster">*</span>First Name</h3>
+                <input type="text" class="subject input" required>
+                <h3><span class="aster">*</span>Last Name</h3>
+                <input type="text" class="subject input" required>
+                <h3><span class="aster">*</span>Email Address</h3>
+                <input type="email" class="subject input" placeholder="abc@email.com" required>
+                <h3><span class="aster">*</span>Mobile Number</h3>
+                <input type="tel" class="code input" placeholder="+91" maxlength="3" minlength="3" required><input
+                    type="tel" class="num input" maxlength="10" minlength="10" required>
+                <h3><span class="aster">*</span>Country</h3>
+                <select>
+                    <option>Choose One</option>
+                    <option>Australia</option>
+                    <option>Austria</option>
+                    <option>Belgium</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Hong Kong</option>
+                    <option>India</option>
+                    <option>Poland</option>
+                    <option>Saudi Arabia</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>United States of America</option>
+                </select>
+
+                <!-- Privacy Policy -->
+                <p class="privacy">The personal information you provide through this website is collected pursuant to
+                    section 26 of the Freedom of Information and Protection of Privacy Act, RSBC 1996, c.165. The
+                    personal information is collected for the purpose of responding to your inquiry.
+                    <br><br>Your personal information will only be accessible by authorized our employees and
+                    representatives, or as otherwise permitted by law. We will not disclose your personal information to
+                    an outside third party unless permitted by law.
+                </p>
+
+                <input type="submit" class="file input">
+                <br><br>
+                <a href="./index.html" title="Return to Home Page">Back</a>
+                <br><br>
+            </form>
+        </div>
+
+        <!-- FAQ Section -->
+        <div id="FAQ">
+            <h2 id="FAQs">FAQ</h2>
+            <ul>
+                <li class="ques">How do I register?</li>
+                <li class="ans">The first thing you do now is send us your email address and VAT number by filling out
+                    the registration form. We check these using the same up-to-date systems you've become used to on
+                    countless other websites and platforms. You're registered as a new buyer in next to no time. You're
+                    also free to start looking at different cars and to place bids.</li>
+                <li class="ques">How do I change my password?</li>
+                <li class="ans">Would you like to change your password? No problem.<br>
+                    Log in to your user account 'My account', go to 'Account settings' and click on 'Modify my details'.
+                    Here you can change your password. We advise against using special characters (ẫ, Ề, ệ, ồ, ỳ, ẵ,
+                    etc.) in your password.</li>
+                <li class="ques">How does the shopping process work?</li>
+                <li class="ans">Once you are registered, you are able to participate in the auctions. Find out all there
+                    is to know about how you can bid here. You'll find a variety of auction types on our online car
+                    auction. Each type has its specific advantages.</li>
+                <li class="ques">How and when do I pay for the products?</li>
+                <li class="ans">You've won the auction and the seller has assigned the vehicle to you. Now you have one
+                    day to complete the vehicle purchase online. After receiving the payment invitation, you pay the
+                    vehicle via bank transfer within two business days. It's possible to do payments for several cars in
+                    one transfer. Please always include the reference numbers of all vehicles you paid. This helps us to
+                    follow everything up and process your payments more quickly. As soon as your payments are received
+                    and processed, you will receive a confirmation email and all related invoices will be available
+                    online in 'My Account'.</li>
+                <li class="ques">What is the pickup procedure?</li>
+                <li class="ans">Picking up your vehicle is as easy as 1, 2, 3. Follow these three steps and you'll
+                    cruise through the process without a second thought:
+                    <br><br> Step 1: MAKE YOUR APPOINTMENT<br>Step 2: PICK UP YOUR VEHICLE<br>Step 3: UPLOAD YOUR
+                    CoD/CMR
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Alert on Form Submission -->
+    <script>
+        function myFunction() {
+            alert("Submitted Successfully! You shall hear from us within 24 hrs.");
+        }
+    </script>
+
+</body>
+
+</html>

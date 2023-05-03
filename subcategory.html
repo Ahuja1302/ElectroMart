@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/subcategory.css"
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+ 
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="./images/logo1.png" width="180px"></a>
+            </div>
+            <nav class="container indigo topBotomBordersOut">
+    
+                <a href="./index.html">Home</a>
+                <a href="./product.html">Product</a>
+                <a href="./about.html">About Us</a>
+                <a href="./Privacy.html">Privacy Policy</a>
+                <a href="./Login.html">Login/Signup</a>
+                <a href="./cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <span class="countItem">0</span></a>
+    
+    
+            </nav>
+    
+        </div>
+    
+    
+    </div>
+    
+    <div class="subcategory">
+        <div class="wrapper">
+            <div class="product-box">
+                <div class="all-images">
+                <div class="small-images">
+                    <img src="./images/a3.webp" onclick="clickimg(this)" >
+                    <img src="./images/a2.webp" onclick="clickimg(this)" >
+                    <img src="./images/a5.webp" onclick="clickimg(this)" >
+                    <img src="./images/a4.webp" onclick="clickimg(this)" >
+                    <img src="./images/a6.webp" onclick="clickimg(this)">
+                   
+                </div>
+                <div class="main-images" >
+                    <img src="./images/a3.webp" id="imagebox"  >
+                </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <div class="content">
+                     <p class="brand">Brand: Apple</p>
+                     <h2>Apple Iphone13 (Green, 128gb)</h2>
+                     <div class="review">
+                        <span>(4.6)</span>
+                        <span class="fa fa-star"></span>
+                     </div>
+                     <div class="price-box">
+                        <p class="price">&#8377; 59,990 <strike style="font-weight: 600; font-size: 0.9rem;" >&#8377; 69,900</strike> </p>
+                        
+                        
+                        <p>Size: <select name="size" >
+                            <option value="select colour"> select color</option>
+                            <option value="black"> black</option>
+                            <option value="blue"> blue</option>
+                            <option value="green"> green</option>
+                            <option value="white"> white</option>
+
+                        </select></p>
+                        <p>Quantity: <input type="text" value="1">
+                        </p>
+                        <button>
+                            <span class="fa fa-shopping-cart"></span> Add to Cart
+                        
+                        </button>
+                        <button class="buy">
+                            <span class="fa fa-shopping-cart"></span>
+                            Buy Now
+                        </button>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function clickimg(smallImg){
+            var fullImg =document.getElementById("imagebox");
+            fullImg.src=smallImg.src
+        }
+    </script>
+</body>
